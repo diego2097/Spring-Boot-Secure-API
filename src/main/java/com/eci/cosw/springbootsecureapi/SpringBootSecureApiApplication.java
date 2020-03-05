@@ -10,7 +10,7 @@ import org.springframework.context.annotation.Bean;
 public class SpringBootSecureApiApplication {
 
 
-	@Bean
+	//@Bean
 	public FilterRegistrationBean jwtFilter()
 	{
 		final FilterRegistrationBean registrationBean = new FilterRegistrationBean();

@@ -39,10 +39,10 @@ public class UserController
 
         String username = login.getUsername();
         String password = login.getPassword();
-
+        String email = login.getEmail();
         //TODO implement logic to verify user credentials
-        User user = userService.getUser( 0l );
-
+        User user = userService.findUserByEmail(email);
+        System.out.println(user);
         if ( user == null )
         {
             throw new ServletException( "User username not found." );
